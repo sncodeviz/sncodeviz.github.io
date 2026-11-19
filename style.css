@@ -1,128 +1,129 @@
-a { color: #9bc5ff; text-decoration: none; }
-a:hover { color: #b9ddff; }
-.header {
-  background: rgba(5, 7, 12, .97) !important;
-  color: #f5f7fb !important;
-  border-bottom: 1px solid #263a54 !important;
+.hero .side-label, .hero .side-footer,
+.hero .hero-side, .hero .hero-side *,
+.hero .process span, .hero .process b,
+.hero .live {
+  color: #ffffff !important;
 }
-.header .brand, .header .nav-links, .header .nav-links a,
-.header .menu-toggle { color: #f5f7fb !important; }
-.header .nav-contact {
-  color: #dceaff !important;
-  border: 1px solid #54749e !important;
-  background: #101f34 !important;
-}
-.header .nav-contact span { color: #9bdce8 !important; }
-.hero.container {
-  background: linear-gradient(125deg, #10213a 0%, #091321 76%) !important;
-  border: 1px solid #2c4667 !important;
-  color: #f5f7fb !important;
-}
-.hero .eyebrow, .section .eyebrow, .profile-section .eyebrow,
-.education-section .eyebrow, .contact-section .eyebrow {
-  color: #9bc5ff !important;
-}
-.hero .intro, .hero .hero-description, .hero .availability {
-  color: #c0cada !important;
-}
-.hero h1, .hero .side-title, .hero .side-title span {
-  color: #f5f7fb !important;
-}
-.hero .side-title span, .hero .accent-text { color: #9bc5ff !important; }
 .hero .hero-side {
-  background: linear-gradient(145deg, #172d49, #0d1b2e) !important;
-  border: 1px solid #3a587d !important;
-  color: #f5f7fb !important;
+  background: linear-gradient(145deg, #23466d, #183453) !important;
+  border: 1px solid #6689b3 !important;
 }
-.hero .side-label, .hero .side-footer, .hero .hero-side > p,
-.hero .process span { color: #c0cada !important; }
-.hero .process b, .hero .live { color: #9bdce8 !important; }
-.hero .button-primary {
-  background: #9bc5ff !important;
-  border: 1px solid #9bc5ff !important;
-  color: #07111e !important;
-}
+.hero .button-primary,
 .hero .button-outline {
-  color: #f5f7fb !important;
-  background: #14243a !important;
-  border: 1px solid #58749a !important;
+  color: #ffffff !important;
+  background: #315b89 !important;
+  border: 1px solid #83a9d4 !important;
 }
+.hero .button-primary:hover,
+.hero .button-outline:hover {
+  background: #416f9f !important;
+}
+
+/* Statistics strip */
+.proof-strip { background: transparent !important; }
 .proof-grid {
-  background: #0c1727 !important;
-  border: 1px solid #2a4261 !important;
-  color: #f5f7fb !important;
+  background: #183453 !important;
+  border: 1px solid #55769e !important;
 }
-.proof-grid strong { color: #f5f7fb !important; }
-.proof-grid span { color: #c0cada !important; }
-.section.container, .profile-grid, .education-section .container,
+.proof-grid strong, .proof-grid span {
+  color: #ffffff !important;
+}
+.proof-grid div { border-color: #55769e !important; }
+
+/* Section blocks */
+.section.container,
+.profile-grid,
+.education-section .container,
 .contact-inner {
-  color: #f5f7fb !important;
-  background: linear-gradient(145deg, #0e1b2d, #091321) !important;
-  border: 1px solid #2a4261 !important;
+  background: linear-gradient(145deg, #193554, #122743) !important;
+  border: 1px solid #55769e !important;
+  color: #ffffff !important;
 }
-.section h2, .profile-grid h2, .education-section h2,
-.contact-inner h2, .card-content h3, .skill-card h3,
-.education-item h3, .development h3, .case-content h2 {
-  color: #f5f7fb !important;
-}
-.section .section-lead, .profile-copy, .profile-copy p,
-.skill-card p, .education-item p, .education-item small,
-.development p, .contact-inner > p {
-  color: #c0cada !important;
-}
-.accent-text, .inline-link, .subtle-link { color: #9bc5ff !important; }
-.project-card, .skill-card, .development {
-  background: #12233a !important;
-  border: 1px solid #304a6c !important;
-  color: #f5f7fb !important;
-}
-.card-content, .card-content * { color: inherit; }
-.card-overline { color: #9bdce8 !important; }
-.card-content h3 { color: #f5f7fb !important; }
-.card-content p { color: #c0cada !important; }
-.chips span {
-  color: #dce8f8 !important;
-  background: #172b45 !important;
-  border-color: #3b587d !important;
-}
-.card-link { color: #dceaff !important; }
-.card-link b { color: #9bdce8 !important; }
-.tag-featured {
-  color: #dceaff !important;
-  border-color: #5879a4 !important;
-  background: #172b45 !important;
-}
-.result-row strong { color: #f5f7fb !important; }
-.result-row span { color: #c0cada !important; }
 .profile-section, .education-section, .contact-section {
   background: transparent !important;
 }
-.education-item { border-color: #30445e !important; }
-.edu-date { color: #9bc5ff !important; }
-.gpa { color: #9bdce8 !important; }
-.case-hero, .case-content, .case-sidebar {
-  color: #f5f7fb !important;
+.section h2, .profile-grid h2, .education-section h2,
+.contact-inner h2, .eyebrow, .accent-text {
+  color: #ffffff !important;
 }
-.case-hero > .container, .case-content, .case-sidebar {
-  background: #0e1b2d !important;
-  border: 1px solid #2a4261 !important;
+.section-lead, .profile-copy, .profile-copy p,
+.contact-inner > p {
+  color: #ffffff !important;
 }
-.case-hero h1, .case-content h2, .case-sidebar h3 {
-  color: #f5f7fb !important;
-}
-.case-hero p, .case-content p, .case-content li,
-.case-sidebar p { color: #c0cada !important; }
-.case-tags span { color: #dce8f8 !important; }
-.gallery figure { background: #12233a !important; border-color: #304a6c !important; }
-.gallery figcaption { color: #c0cada !important; }
-.footer {
-  background: #04060a !important;
-  color: #c0cada !important;
-  border-top: 1px solid #263a54 !important;
-}
-.footer, .footer * { color: #c0cada; }
-.footer .brand, .footer .brand-mark { color: #f5f7fb !important; }
 
-/* Avoid a white flash around the page and keep all blocks centered. */
-.container { max-width: 1160px; }
+/* Project cards, skill cards and metadata */
+.project-card, .skill-card, .development {
+  background: #1b385a !important;
+  border: 1px solid #55769e !important;
+  color: #ffffff !important;
+}
+.card-content, .card-content *,
+.card-overline, .card-content h3, .card-content p,
+.card-link, .card-link b, .subtle-link,
+.tag-featured, .chips span,
+.result-row strong, .result-row span,
+.skill-card h3, .skill-card p,
+.development h3, .development p {
+  color: #ffffff !important;
+}
+.chips span, .tag-featured {
+  background: #23466d !important;
+  border: 1px solid #6689b3 !important;
+}
+.card-link { border-color: #55769e !important; }
+
+/* Education and contact */
+.education-item, .education-list,
+.education-item { border-color: #55769e !important; }
+.edu-date, .gpa { color: #ffffff !important; }
+.contact-inner {
+  background: linear-gradient(125deg, #1d3d62, #122743) !important;
+}
+
+/* Project case-study pages */
+.case-hero, .case-content, .case-sidebar {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+.case-hero > .container,
+.case-content, .case-sidebar {
+  background: #193554 !important;
+  border: 1px solid #55769e !important;
+}
+.case-hero h1, .case-hero p,
+.case-content h2, .case-content p,
+.case-content li, .case-sidebar h3,
+.case-sidebar p, .case-sidebar a,
+.case-tags span, .gallery figcaption,
+.breadcrumb, .breadcrumb a {
+  color: #ffffff !important;
+}
+.case-tags span, .gallery figure {
+  background: #23466d !important;
+  border-color: #6689b3 !important;
+}
+.insight-box {
+  background: #23466d !important;
+  border-left-color: #ffffff !important;
+}
+.footer {
+  background: #10213a !important;
+  border-top: 1px solid #55769e !important;
+}
+.footer, .footer * {
+  color: #ffffff !important;
+}
+
+/* Keep visual dashboard illustrations blue-toned as well. */
+.card-visual,
+.visual-health, .visual-tableau, .visual-walmart,
+.visual-freight, .visual-hotel, .visual-diabetes,
+.visual-churn {
+  border-color: #55769e;
+}
+
+/* Small screens */
 @media (max-width: 620px) {
+  .nav-links { background: #122743 !important; }
+  .nav-links a { color: #ffffff !important; }
+
