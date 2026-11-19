@@ -1,26 +1,18 @@
-# SN CodeViz — Refined portfolio
+# SN CodeViz — complete portfolio rebuild
 
-A responsive, dark editorial-style portfolio for Sheikh Nasher.
+A fresh static-site rebuild inspired by the ISOM 839 course website's layout rhythm: compact navigation, bold hero, metric strip, numbered sections, project cards, concise about section, and contact block.
 
-## Files
-- `index.html` — homepage and selected project cards
-- `style.css` — responsive visual system and project layouts
-- `script.js` — responsive navigation and footer year
-- `projects/` — project case-study pages
-- `assets/healthcare-dashboard-*.png` — four Power BI dashboard screenshots
+Theme: near-black background, white typography, restrained blue accents, slate project panels.
 
-## Publish to GitHub Pages
-1. Extract the ZIP.
-2. Upload the **contents** of this folder to the root of `sncodeviz/sncodeviz.github.io`.
-3. Allow GitHub Pages to deploy the commit.
+Included:
+- index.html — homepage
+- style.css — complete stylesheet (replace the old file; do not append)
+- script.js — responsive mobile navigation
+- projects/ — seven project case studies
+- assets/ — four Power BI dashboard screenshots
 
-## Portfolio project lineup
-1. Healthcare Performance & Patient Experience Analytics — Power BI / CMS data
-2. Superstore Sales Analytics — Tableau Public
-3. Walmart Sales Forecasting — Python; Random Forest R² 0.93, RMSE $147K; 6.4K+ records; 45+ stores
-4. Freight Brokerage Load Analysis — Python; Random Forest R² 0.65
-5. Hotel Booking Database & ETL Pipeline — SQL Server / SSIS; 3NF; 40K+ booking records
-6. Diabetes Prediction Project — Python / scikit-learn / SMOTE
-7. Customer Churn Analysis — Excel dashboard
+Projects: Healthcare Performance & Patient Experience; Superstore Sales Analytics; Walmart Sales Forecasting; Freight Brokerage Load Analysis; Hotel Booking Database & ETL Pipeline; Diabetes Prediction; Customer Churn Analysis.
 
-The Boston Crime Hotspots, Sephora Products Analysis, Lorenz Curve, and Used Car Sales Analysis projects are intentionally omitted from this version.
+No GPA or education section is included. Used Car Sales, Boston Crime, Sephora, and Lorenz Curve are omitted.
+
+Publish by uploading the contents of this folder to the root of sncodeviz/sncodeviz.github.io, replacing index.html, style.css, and script.js while preserving projects/ and assets/.
