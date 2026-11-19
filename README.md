@@ -1,34 +1,30 @@
-# SN CodeViz Portfolio
+# SN CodeViz Portfolio — Project-first redesign
 
-A responsive personal portfolio built with plain HTML, CSS, and JavaScript.
+A responsive dark-mode portfolio built with plain HTML, CSS, and JavaScript.
 
-## Files
-- `index.html` — page structure and content
-- `style.css` — dark navy visual system and responsive layout
-- `script.js` — mobile navigation, current year, and optional GitHub API verification
+## Structure
+- `index.html` — homepage, profile, featured project gallery, toolkit, education, contact
+- `projects/` — standalone project case-study pages, including Healthcare Performance & Patient Experience
+- `assets/` — four Power BI dashboard screenshots used in the healthcare case study
+- `style.css` — shared responsive design system
+- `script.js` — mobile navigation and current-year footer
 
-## Run locally
-Open `index.html` in a browser. For the most reliable local preview, run a simple local server:
-
+## Preview locally
+Run from this folder:
 ```bash
 python -m http.server 8000
 ```
+Then open http://localhost:8000.
 
-Then visit `http://localhost:8000`.
+## Publish to GitHub Pages
+Upload the contents of this folder to the root of `sncodeviz.github.io` on the `main` branch, preserving the `projects/` directory. In Settings → Pages, use `main` and `/(root)` if Pages is not already configured.
 
-## Publish with GitHub Pages
-1. Create a new public repository, for example `sncodeviz.github.io`.
-2. Upload `index.html`, `style.css`, `script.js`, and `README.md` to the repository root.
-3. In the repository, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)`, then save.
-6. GitHub Pages will publish the site at `https://sncodeviz.github.io/`.
+## Before final publication
+- Review the wording of your degree titles and graduation date.
+- Confirm the LinkedIn profile URL.
+- Add selected charts/screenshots from each repository to the matching case study. The healthcare Power BI screenshots are included in `assets/`.
+- Confirm whether the LinkedIn Projects page is publicly viewable to visitors who are not signed in.
+- Consider adding a downloadable resume PDF.
+- Review all project results against the original notebooks and reports before adding numerical model metrics.
 
-## Before publishing
-- Confirm the preferred public display name and education wording.
-- Add a professional headshot if desired.
-- Add a resume PDF only if you want it publicly downloadable.
-- Review each project description and add screenshots, findings, methods, and links to notebooks or reports.
-- Add a professional contact email if you want direct email inquiries.
-
-The project cards intentionally link to the existing public repositories. The JavaScript makes a lightweight public GitHub API check but does not require a token.
+All project descriptions intentionally avoid unsupported performance claims. The diabetes project includes an educational-use disclaimer.
