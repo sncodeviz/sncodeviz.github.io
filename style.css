@@ -1,96 +1,107 @@
-/* SN CodeViz — layout refinement overrides
-   Add this AFTER the existing style.css rules, or merge into a clean stylesheet. */
+  .profile-grid,
+  .education-section > .container { padding: 24px 18px; }
+  .education-item { grid-template-columns: 1fr; gap: 5px; padding: 17px 5px; }
+  .contact-section { margin: 16px 0 22px; }
+  .contact-inner { padding: 27px 20px; }
+  .case-hero { padding-top: 16px; }
+  .case-hero > .container { padding: 24px 19px; }
+  .case-layout { padding-top: 14px; padding-bottom: 34px; }
+  .case-content { padding: 19px 16px; }
+  .gallery { grid-template-columns: 1fr; }
+}
 
+/* =========================================================
+   SN CODEVIZ — BLACK / NAVY / WHITE COLOR SYSTEM
+   Append after the layout rules above. Keeps the layout intact.
+   ========================================================= */
 :root {
-  --page-bg: #07111e;
-  --panel-bg: #0d1c2c;
-  --panel-raised: #11243a;
-  --panel-border: rgba(137, 183, 218, .20);
+  --page-bg: #05070b;
+  --panel-bg: #0b1422;
+  --panel-raised: #101e31;
+  --panel-border: rgba(104, 151, 205, .28);
+  --text: #f7f9fc;
+  --muted: #b7c2d1;
+  --blue: #78aef5;
+  --cyan: #9bc4ff;
   --content-width: 1160px;
-  --page-gutter: clamp(18px, 4vw, 34px);
-  --panel-radius: 14px;
 }
 
-html { scroll-behavior: smooth; }
-body {
-  background: var(--page-bg);
-  overflow-x: hidden;
-  line-height: 1.75;
-}
+html, body { background: #05070b !important; color: #f7f9fc; }
+body { color: #f7f9fc; }
+.header { background: rgba(5, 7, 11, .97) !important; border-bottom-color: rgba(120,174,245,.18); }
+.brand, .nav-links, .nav-links a { color: #f1f5fb; }
+.nav-links a:hover, .inline-link:hover, .subtle-link:hover { color: #9bc4ff; }
+.nav-contact { border-color: rgba(120,174,245,.4); background: #0c1728; }
 
-/* One reliable content width for every major section. */
-.container,
 .hero.container,
 .section.container,
 .profile-grid,
 .education-section > .container,
 .contact-inner,
-.case-hero > .container,
-.case-layout {
-  width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
-  margin-left: auto;
-  margin-right: auto;
+.case-hero > .container {
+  background: linear-gradient(145deg, #0d1a2c 0%, #091321 100%) !important;
+  border-color: rgba(120,174,245,.28) !important;
 }
-
-/* Header */
-.header { background: rgba(7, 17, 30, .96); }
-.nav { min-height: 74px; }
-.nav-links { gap: clamp(14px, 2.2vw, 28px); }
-
-/* Hero block */
-.hero.container {
-  min-height: 0;
-  margin-top: 34px;
-  margin-bottom: 26px;
-  padding: clamp(28px, 5vw, 58px);
-  display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(300px, .92fr);
-  align-items: center;
-  gap: clamp(28px, 4vw, 58px);
-  border: 1px solid var(--panel-border);
-  border-radius: 18px;
-  background: linear-gradient(135deg, #10243a 0%, #0b1929 100%);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, .20);
-}
-.hero-main { min-width: 0; }
-.hero h1 {
-  max-width: 680px;
-  margin: 0;
-  font-size: clamp(38px, 5vw, 64px);
-  line-height: 1.14;
-  letter-spacing: -.045em;
-  overflow-wrap: normal;
-}
-.hero-description {
-  max-width: 610px;
-  margin-top: 22px;
-  line-height: 1.9;
-}
-.hero-side {
-  width: 100%;
-  min-width: 0;
-  border-radius: 12px;
-  padding: 26px;
-  background: linear-gradient(145deg, #142e47, #0d1c2c);
-  box-shadow: inset 0 1px rgba(255,255,255,.04), 0 15px 40px rgba(0,0,0,.16);
-}
-
-/* Compact metrics block */
-.proof-strip { padding: 0; border: 0; background: transparent; }
+.hero-side,
+.project-card,
+.skill-card,
+.case-content,
+.case-sidebar,
+.development,
 .proof-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding: 20px 24px;
-  border: 1px solid var(--panel-border);
-  border-radius: 12px;
-  background: var(--panel-bg);
+  background: #0b1422 !important;
+  border-color: rgba(120,174,245,.24) !important;
 }
-.proof-grid > div {
-  min-width: 0;
-  justify-content: flex-start;
-  padding: 6px 14px;
-  border-right: 1px solid rgba(137,183,218,.13);
+
+.proof-strip { background: transparent !important; }
+.proof-grid { box-shadow: 0 12px 34px rgba(0,0,0,.28); }
+.project-card { box-shadow: 0 12px 30px rgba(0,0,0,.25); }
+.project-card:hover { border-color: rgba(155,196,255,.65) !important; }
+.card-visual { border-bottom: 1px solid rgba(120,174,245,.16); }
+
+h1, h2, h3, h4, .side-title, .card-content h3,
+.education-item h3, .skill-card h3, .case-content h2 {
+  color: #f7f9fc !important;
 }
+p, li, .hero-description, .section-lead, .profile-copy,
+.card-content p, .education-item p, .education-item small,
+.skill-card p, .case-content p, .case-content li,
+.contact-inner > p, .case-sidebar p {
+  color: #bdc8d7;
+}
+.intro, .availability, .side-footer, .visual-foot,
+.card-overline, .chips span, .edu-date, .breadcrumb {
+  color: #c8d5e6;
+}
+.eyebrow, .blue, .accent-text, .inline-link,
+.card-link, .case-sidebar a, .back-link { color: #9bc4ff !important; }
+.status-dot, .live i { background: #9bc4ff; box-shadow: 0 0 10px rgba(155,196,255,.55); }
+.tag-featured { color: #d9e9ff; border-color: rgba(155,196,255,.45); background: rgba(120,174,245,.08); }
+.chips span { border-color: rgba(120,174,245,.28); background: rgba(120,174,245,.045); }
+.card-link, .education-list, .education-item, .development,
+.side-footer, .process, .footer { border-color: rgba(120,174,245,.20); }
+
+.button-primary { background: #8dbbff; color: #06101d !important; }
+.button-primary:hover { background: #b1d0ff; }
+.button-outline { color: #f7f9fc !important; border-color: rgba(155,196,255,.48); background: rgba(120,174,245,.05); }
+.button-outline:hover { border-color: #9bc4ff; background: rgba(120,174,245,.12); }
+
+.visual-health { background: linear-gradient(130deg,#132d4c,#0a1728) !important; }
+.visual-tableau { background: linear-gradient(130deg,#172b49,#0b1728) !important; }
+.visual-walmart { background: linear-gradient(130deg,#102c49,#091827) !important; }
+.visual-freight { background: linear-gradient(130deg,#142944,#0a1728) !important; }
+.visual-hotel { background: linear-gradient(130deg,#172a45,#0a1728) !important; }
+.visual-diabetes { background: linear-gradient(130deg,#1c2947,#0a1728) !important; }
+.visual-churn { background: linear-gradient(130deg,#102d42,#091827) !important; }
+
+.contact-section { background: transparent !important; }
+.contact-inner { background: radial-gradient(ellipse at 82% 22%, rgba(36,83,145,.22), transparent 45%), linear-gradient(135deg,#0d1b30,#070d17) !important; }
+.footer { background: #030509 !important; color: #aebbd0; }
+.footer-row, .footer-row .brand { color: #c6d1df; }
+.case-hero { background: transparent !important; }
+.case-sidebar { box-shadow: 0 10px 28px rgba(0,0,0,.22); }
+.insight-box { background: #101f33; border-left-color: #9bc4ff; }
+.gallery figure { background: #0b1422; border-color: rgba(120,174,245,.24); }
+
+::selection { background: rgba(120,174,245,.35); color: #fff; }
+:focus-visible { outline: 2px solid #9bc4ff; outline-offset: 3px; }
